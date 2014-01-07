@@ -1,0 +1,132 @@
+/*
+Sum CMS was developed to help manage a single website.
+To install, please visit http://dev.sumcms.com/page/Getting_Started for further detailed instructions.
+The index.php file in the root directory of the website must be properly set up to take full advantage of Sum CMS features.
+To properly set up your index file, visit http://dev.sumcms.com/page/Documentation.
+ *
+ *
+ * Sum CMS - A Content Management System
+ *
+ * @category   Content Management System
+ * @software   Sum CMS
+ * @author     Shannon Reca <sreca@recamedia.com>
+ * @copyright  2013 Shannon Reca, RecaMedia
+ * @license   See License.txt
+ * @version    v1.3
+ * @link       http://dev.sumcms.com
+ * @since      File available since Release 1.0
+ * @support    https://github.com/sorec007/Sum-CMS/issues
+*/
+
+html{
+	font-size:12px;
+	overflow-y:scroll;
+}
+input{
+	outline:none;
+}
+body,td,th {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: normal;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color:#5E6566;
+}
+a:link {
+	color: #06C;
+}
+a:visited {
+	color: #06C;
+}
+a:hover {
+	color: #06C;
+}
+a:active {
+	color: #06C;
+}
+.center_wrap{
+	overflow:hidden;
+}
+.center_center{
+	float:left;
+	position:relative;
+	left:50%;
+}
+.center_item{
+	position:relative;
+	left:-50%;
+}
+.LogBoxWrap{
+	width:360px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	line-height:18px;
+}
+.LogBox{
+	padding:20px 20px 10px 20px;
+	border:1px solid #DDE0E1;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-moz-box-shadow: 1px 1px 6px #DDE0E1;
+	-webkit-box-shadow: 1px 1px 6px #DDE0E1;
+	box-shadow: 1px 1px 6px #DDE0E1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color='#DDE0E1')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color='#DDE0E1');
+}
+.LoginLogo,.LogRow{
+	margin-bottom:10px;
+}
+.errors{
+	color:#C00;
+	margin-bottom:10px;
+}
+.Form_whiteWrap{
+	min-height:22px;
+	padding:4px;
+	border:1px solid #DDE0E1;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	background-color:#FFF;
+	margin-top:5px;
+}
+.Form_input{
+	width:100%;
+	min-height:22px;
+	background-color:none;
+	border:none;
+	margin:0px;
+	padding:0px;
+	color:#5E6566;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:1em;
+}
+.Form_submit{
+	height:20px;
+	color:#FFF;
+	font-family:sans-serif;
+	font-size:1.1em;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	padding-left:15px;
+	padding-right:15px;
+	border:none;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	margin:0px;
+	background: #008dd3; /* Old browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008dd3', endColorstr='#0060b5'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#008dd3), to(#0060b5)); /* for webkit browsers */
+	background: -moz-linear-gradient(top, #008dd3, #0060b5); /* for firefox 3.6+ */
+}
+.Form_submit:hover{
+	background:#004993 !important;
+}

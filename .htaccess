@@ -1,0 +1,66 @@
+<Files .htaccess>
+order allow,deny
+</Files>
+
+Options +FollowSymlinks
+
+RewriteEngine on
+
+RewriteRule ^activate/images/(.+)?$ /SumCMS/Admin/images/$1 [NC,L]
+RewriteRule ^activate/css/(.+)?$ /SumCMS/Admin/css/$1 [NC,L]
+RewriteRule ^activate/js/(.+)?$ /SumCMS/Admin/js/$1 [NC,L]
+RewriteRule ^activate/((?<!results=).*@.*)$ /SumCMS/Admin/func_activate.php?e=$1 [L]
+
+RewriteRule ^page/images/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^page/img/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^page/css/(.+)?$ /css/$1 [NC,L]
+RewriteRule ^page/js/(.+)?$ /js/$1 [NC,L]
+RewriteRule ^page/(.+)?$ /index.php?t=p&p=$1 [L]
+RewriteRule ^page/(.+)?$/captcha/(.+)?$ /SumCMS/Admin/_captcha/$2 [L]
+RewriteRule ^page/$ /index.php [L]
+RewriteRule ^page$ /index.php [L]
+
+RewriteRule ^blog/pg/images/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^blog/pg/img/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^blog/pg/css/(.+)?$ /css/$1 [NC,L]
+RewriteRule ^blog/pg/js/(.+)?$ /js/$1 [NC,L]
+RewriteRule ^blog/captcha/audio/(.+)?$ /SumCMS/Admin/_captcha/audio/$1 [L]
+RewriteRule ^blog/captcha/backgrounds/(.+)?$ /SumCMS/Admin/_captcha/backgrounds/$1 [L]
+RewriteRule ^blog/captcha/database/(.+)?$ /SumCMS/Admin/_captcha/database/$1 [L]
+RewriteRule ^blog/captcha/gdfonts/(.+)?$ /SumCMS/Admin/_captcha/gdfonts/$1 [L]
+RewriteRule ^blog/captcha/images/(.+)?$ /SumCMS/Admin/_captcha/images/$1 [L]
+RewriteRule ^blog/captcha/words/(.+)?$ /SumCMS/Admin/_captcha/words/$1 [L]
+RewriteRule ^blog/captcha/(.+)?$ /SumCMS/Admin/_captcha/$1 [L]
+RewriteRule ^blog/images/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^blog/img/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^blog/css/(.+)?$ /css/$1 [NC,L]
+RewriteRule ^blog/js/(.+)?$ /js/$1 [NC,L]
+RewriteRule ^blog/pg/(.+)?$ /index.php?t=b&b=$1 [L]
+RewriteRule ^blog/(.+)?$ /index.php?t=b&p=$1 [L]
+RewriteRule ^blog/$ /index.php?t=b [L]
+RewriteRule ^blog$ /index.php?t=b [L]
+
+RewriteRule ^blog-category/(.+)?$/pg/images/(.+)?$ /img/$2 [NC,L]
+RewriteRule ^blog-category/(.+)?$/pg/img/(.+)?$ /img/$2 [NC,L]
+RewriteRule ^blog-category/(.+)?$/pg/css/(.+)?$ /css/$2 [NC,L]
+RewriteRule ^blog-category/(.+)?$/pg/js/(.+)?$ /js/$2 [NC,L]
+RewriteRule ^blog-category/images/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^blog-category/img/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^blog-category/css/(.+)?$ /css/$1 [NC,L]
+RewriteRule ^blog-category/js/(.+)?$ /js/$1 [NC,L]
+RewriteRule ^blog-category/(.+)?$/pg/(.+)?$ /index.php?t=b&c=$1&b=$2 [L]
+RewriteRule ^blog-category/(.+)?$ /index.php?t=b&c=$1 [L]
+RewriteRule ^blog-category/$ /index.php [L]
+RewriteRule ^blog-category$ /index.php [L]
+
+RewriteRule ^contact/captcha/(.+)?$ /SumCMS/Admin/_captcha/$1 [L]
+RewriteRule ^contact/images/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^contact/img/(.+)?$ /img/$1 [NC,L]
+RewriteRule ^contact/css/(.+)?$ /css/$1 [NC,L]
+RewriteRule ^contact/js/(.+)?$ /js/$1 [NC,L]
+RewriteRule ^contact/(.+)?$ /index.php?t=c [L]
+RewriteRule ^contact/$ /index.php?t=c [L]
+RewriteRule ^contact(.+)?$ /index.php?t=c [L]
+RewriteRule ^contact$ /index.php?t=c [L]
+
+RewriteRule ^captcha/(.+)?$ /SumCMS/Admin/_captcha/$1 [L]
