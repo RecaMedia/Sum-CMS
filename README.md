@@ -25,10 +25,10 @@ The following libraries and scripts were used to create Sum CMS.
  - MJS.NestedSortable.js
  - WatermarkInput.js
 
-  [1]: http://dev.sumcms.com/page/Design_and_Layout
-  [2]: http://dev.sumcms.com/page/Navigation_Build
-  [3]: http://dev.sumcms.com/page/Get_Calls
-  [4]: http://dev.sumcms.com/page/IS_Return
-  [5]: http://dev.sumcms.com/page/Templates
-  [6]: http://dev.sumcms.com/page/Paging_Build
-  [7]: http://dev.sumcms.com
+  [1]: http://sumcms.recamedia.com/page/Design_and_Layout
+  [2]: http://sumcms.recamedia.com/page/Navigation_Build
+  [3]: http://sumcms.recamedia.com/page/Get_Calls
+  [4]: http://sumcms.recamedia.com/page/IS_Return
+  [5]: http://sumcms.recamedia.com/page/Templates
+  [6]: http://sumcms.recamedia.com/page/Paging_Build
+  [7]: http://sumcms.recamedia.com
